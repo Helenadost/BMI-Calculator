@@ -1,0 +1,209 @@
+* {
+    font-family: sans-serif;
+  }
+  
+  .bmi_container {
+    background-color: #f4f6ff;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .bmi_container h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .gender_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: .7em;
+    -webkit-box-shadow: 3px 3px 6px #a3a3a3;
+    box-shadow: 3px 3px 6px #a3a3a3;
+  }
+  
+  .gender_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: .7em;
+    padding: .5em 1.5em;
+    margin: .2em;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #6f63e1;
+    color: #fff;
+  }
+  
+  .gender_btn svg {
+    fill: #000;
+    margin-right: .5em;
+  }
+  
+  .active svg {
+    fill: #fff;
+  }
+  
+  #gender_img {
+    max-width: 50%;
+    margin-left: 25%;
+  }
+  
+  .calculation_box {
+    background: #fff;
+    border-radius: 0.7em;
+    padding: .5em;
+    -webkit-box-shadow: 3px 3px 6px #a3a3a3;
+    box-shadow: 3px 3px 6px #a3a3a3;
+  }
+  
+  .weight_box,
+  .height_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5em;
+  }
+  
+  .weight_box label,
+  .height_box label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .weight_box svg,
+  .height_box svg {
+    background: #275add;
+    margin-right: .5em;
+    border-radius: 0.3em;
+    fill: white;
+  }
+  
+  .height_box svg {
+    background: #dd8e26;
+  }
+  
+  .data_input {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #f4f6ff;
+    border: 1px solid #abb2d4;
+    border-radius: 0.3em;
+    padding: 0 0.3em;
+    max-width: 60px;
+    -webkit-box-shadow: 3px 3px 6px #a3a3a3;
+    box-shadow: 3px 3px 6px #a3a3a3;
+  }
+  
+  .data_input i {
+    font-style: normal;
+    color: #253174;
+    font-size: .8em;
+  }
+  
+  input[type=number] {
+    border: none;
+    background-color: transparent;
+    height: 1.5em;
+    max-width: 173px;
+    width: 100%;
+  }
+  
+  .calc_btn {
+    text-align: center;
+    margin: 1em 0;
+  }
+  
+  #calculation,
+  #restart {
+    border-radius: 0.7em;
+    padding: 0.5em 3em;
+    margin: 0.2em;
+    background-color: #6f63e1;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  #false_value {
+    display: none;
+    text-align: center;
+    color: #e32222;
+  }
+  
+  .result_box,
+  .classification {
+    background: #fff;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    -webkit-box-shadow: 3px 3px 6px #a3a3a3;
+    box-shadow: 3px 3px 6px #a3a3a3;
+    text-align: center;
+    display: none;
+    margin: 1em 0;
+    font-weight: bold;
+  }
+  
+  #result {
+    color: #6f63e1;
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .classification {
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  .classification table {
+    width: 100%;
+  }
+  
+  .classification td,
+  .classification th {
+    padding: .5em;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  :focus-visible {
+    outline: none;
+  }
