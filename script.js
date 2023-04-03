@@ -101,13 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else return false;
     }
 
+    // restart function
     restart.onclick = function () {
-        resultBox.style.display = "none";
-        classification.style.display = "none";
         weight.value = null;
         height.value = null;
+        resultBox.style.display = "none";
+        classification.style.display = "none";
         gender.style.display = "block";
         calculationBox.style.display = "block";
+        falseValue.style.display = "none";
     };
 });
 
