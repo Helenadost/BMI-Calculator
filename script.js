@@ -65,9 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             calculationBox.style.display = "none";
 
             if (result == 0 || isNaN(result) || !isFinite(result)) {
-                resultBox.style.display = "none";
-                classification.style.display = "none";
-                falseValue.style.display = "block";
+                showFalseValue();
             } else {
                 resultBox.style.display = "block";
                 classification.style.display = "block";
@@ -89,10 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
         } else {
-            falseValue.style.display = "block";
-            resultBox.style.display = "none";
-            classification.style.display = "none";
+            showFalseValue();
         }
+    };
+
+    function showFalseValue() {
+        falseValue.style.display = "block";
     };
 
     function fieldsValidation() {
