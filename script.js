@@ -59,19 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = (Number(weightInput) / (Number(heightInput / 100) * (heightInput / 100))).toFixed(2);
             resultElement.innerHTML = result;
 
-            resultBox.style.display = "block";
-            classification.style.display = "block";
-            gender.style.display = "none";
-            calculationBox.style.display = "none";
-
             if (result == 0 || isNaN(result) || !isFinite(result)) {
                 showFalseValue();
             } else {
-                resultBox.style.display = "block";
-                classification.style.display = "block";
-                falseValue.style.display = "none";
-                gender.style.display = "none";
-                calculationBox.style.display = "none";
+                showResults();
             };
 
             if (result < 18.5) {
@@ -89,6 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             showFalseValue();
         }
+    };
+
+    function showResults() {
+        resultBox.style.display = "block";
+        classification.style.display = "block";
+        gender.style.display = "none";
+        calculationBox.style.display = "none";
     };
 
     function showFalseValue() {
